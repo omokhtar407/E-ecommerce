@@ -1,0 +1,369 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OneTech</title>
+    <meta name="author" content="Team" />
+    <meta name="description" content="E-Commerce" />
+    <meta name="keywords" content="html,css,js,jquery" />
+    <!-- For Responsive mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Page icon Link -->
+    <link rel="icon" href="img/characteristics/call.webp">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Font Awesome  -->
+   <link rel="stylesheet" href="css/all.min.css">
+   <!-- Owl.carousel Plugin -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <!-- Slick Plugin -->
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+   <!-- Main style sheet -->
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body >
+    <!-- For Loading Screen -->
+    <div class="loading d-flex justify-content-center align-items-center">
+        <div id="spinner" class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+          </div>
+    </div>
+    <!-- End Loading -->
+    <!-- Start Header -->
+    <header class="position-relative">
+        <!-- Start Main-header -->
+        <section id="Main_header" class="py-2">
+            <div class="container">
+                <div class="row  align-items-center ">
+    
+                    <div class="col-lg-2 col-sm-3 col-3 order-1">
+                        <div class="logo pt-2">
+                            <a href="#">OneTech</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right mt-0 mt-md-4">
+                        <form id="Main_head_form" class="position-relative d-none d-md-block">
+                            <input class="form-control" type="text" placeholder="Search For Products..." required>
+                            <div class="dropdown_list">
+                                <span class="selected-category">All Categories </span>
+                                <i class="fas fa-angle-down"></i>
+                                <ul class=" custom_header list-unstyled shadow">
+                                    <li>All Categories</li>
+                                    <li>Computers</li>
+                                    <li>Laptops</li>
+                                    <li>Cameras</li>
+                                    <li>Hardware</li>
+                                    <li>Smartphones</li>
+                                </ul>
+                            </div>
+                            <button class="btnSubmit" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+                        <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                            <div class="d-flex justify-content-center align-items-center me-3 me-sm-5">
+                                <div class="image">
+                                    <img class="w-100" src="img/wishlist_cart/download.webp" alt="">
+                                </div>
+                                <div class="wishlist-info ms-3 text-end ">
+                                    <a href="#" class="fs-5 d-block"><strong>wishlist</strong></a>
+                                    <small>115</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="image position-relative">
+                                    <img class="w-100" src="img/wishlist_cart/download (4).webp" alt="">
+                                    <div class="cart-count">10</div>
+                                </div>
+                                <div class="cart-info ms-3 text-end ">
+                                    <a href="#" class="fs-5 d-block"><strong>Cart</strong></a>
+                                    <small>$85</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- End Main-header -->
+        
+        <!-- Start Main-Nav -->
+        <nav id="main_nav" class="navbar navbar-expand-lg navbar-light ">
+            <div class="container ">
+                <div id="category-bar" class="d-flex justify-content-center align-items-center position-relative">
+                    <span class="me-2"><i class="fas fa-bars bar-ico fs-5"></i></span>
+                    <span class="fs-5 fw-bold text-uppercase" href="#">Categories</span>
+                    <ul class="custom_list list-unstyled shadow ">
+                        <li><a href="#">Computers & Laptops</a></li>
+                        <li><a href="#">Cameras & Photos</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Smartphones & Tablets</a></li>
+                        <li><a href="#">TV & Audio</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Car Electronics</a></li>
+                        <li><a href="#">Video Games & Consoles</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="none" aria-label="Toggle navigation">
+                    <span class="me-2 text-white fw-bold text-uppercase d-lg-none">Menu</span>
+                    <span><i class="fas fa-bars bar-ico text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse w-100  justify-content-end" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="homeLink" class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a id="SuperLink" class="nav-link" href="#deals_featured">Super Deals</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a id="FeaturedLink" class="nav-link" href="#New_Arrival">New Arrival</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a id="PagesLink" class="nav-link" href="#">Pages <i class="fas fa-angle-down"></i></a>
+                            <ul class="custom_list list-unstyled shadow ">
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="product.html">Product</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a id="blogLink" class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contactLink" class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="LogoutLink" class="nav-link d-none" aria-current="page" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-nav">
+                    <div class="container">
+                        <div class="collapse navbar-collapse w-100 mt-2  justify-content-end d-lg-none" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <form class="collapse-form position-relative ">
+                                    <input class="form-control" type="text" placeholder="Search For Products..." required>
+                                </form>
+                                <li class="nav-item">
+                                    <a id="homeLink" class="nav-link " aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a id="SuperLink" class="nav-link" href="#deals_featured">Super Deals</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a id="FeaturedLink" class="nav-link" href="#New_Arrival">New Arrival</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a id="PagesLink" class="nav-link" href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                    <ul class="custom_list list-unstyled shadow ">
+                                        <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="product.html">Product</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="blogLink" class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="contactLink" class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="LogoutLink" class="nav-link d-none " aria-current="page" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        <!-- End Main-Nav -->
+        
+    </header>
+    <!-- End header -->
+
+    <!-- Start Cart -->
+    <section id="cart" class="py-5">
+        <div class="container">
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <h2 class="mb-5">Shopping Cart</h2>
+                    <div class="cart_items">
+                        <ul class="cart_list list-unstyled mb-0">
+                            <li class="cart_item">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="image text-lg-start text-center">
+                                            <img src="img/product/xfeatured_7.png.pagespeed.ic.TSCkRrtjRn.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="cart_info">
+                                            <div class="row g-4 flex-sm-row flex-column ">
+                                                <div class="col">
+                                                    <p>Name</p>
+                                                    <p>MacBook Air 13</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="cart_text">color</p>
+                                                    <div class="cart_color"></div>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Quantity</p>
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Price</p>
+                                                    <p>$2000</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Total</p>
+                                                    <p>$2000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_total my-3 ">
+                        <p class="mb-0 text-end"><small>Order Total :</small> <Strong>$2000</Strong></p>
+                    </div>
+                    <button class="BtnAddCart btn btn-info text-white fw-bold px-4 py-2 ">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Cart -->
+
+    <!-- Start Subscribe -->
+    <section id="subscribe" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="item d-flex justify-content-center">
+                            <div class="img-sub me-4">
+                                <img src="img/telegram.webp" alt="">
+                            </div>
+                            <div class="text-sub">
+                                <h3 class="h5 fw-bold">Sign up for Newsletter</h3>
+                                <p class="mb-0">...and receive %20 coupon for first shopping.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <form id="subscrib_form">
+                        <input id="userSubEmail" class="form-control" type="email" name="userSubEmail"  placeholder="Enter Your Email Adress">
+                        <p class=" mt-2 d-none text-danger" id="userSubEmailReq">Email is invalid.</p>
+                        <button id="btnSubEmail" class="btn text-white btn-info" type="submit" disabled>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Subscribe -->
+
+    <!-- Start Footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="item">
+                        <div class="logo mb-4">
+                            <a href="#">OneTech</a>
+                        </div>
+                        <div class="footer_title mb-2">Got Question? Call Us 24/7</div>
+                        <div class="footer_phone mb-2">+38 068 005 3570</div>
+                        <div class="footer_email mb-2">omarmokhtar363@gmail.com</div>
+                        <div class="footer_contact_text mb-3">17 Princess Road, London Grester London NW18JR, UK</div>
+                        <div class="footer_social d-flex">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <div class="item">
+                        <h3 class="h6 mb-3">Find it Fast</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Computers & Laptops</a></li>
+                            <li><a href="#">Cameras & Photos</a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Smartphones & Tablets</a></li>
+                            <li><a href="#">TV & Audio</a></li>
+                            <li><a href="#">Gadgets</a></li>
+                            <li><a href="#">Car Electronics</a></li>
+                            <li><a href="#">Video Games & Consoles</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <h3 class="h6 mb-3">Customer Care</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Customer Services</a></li>
+                            <li><a href="#">Returns / Exchange</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Product Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Copyright  -->
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <p class="mb-0">Copyright &copy;2021 All rights reserved | This template is made by <a class="triple" href="#">Triple-O</a> </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="pay ">
+                        <ul class="list-unstyled d-flex justify-content-md-end mb-0 ">
+                            <li><a href="#" class="me-3"><img src="img/footer/footer1.webp" alt=""></a></li>
+                            <li><a href="#" class="me-3"><img src="img/footer/footer2.webp" alt=""></a></li>
+                            <li><a href="#" class="me-3"><img src="img/footer/footer3.webp" alt=""></a></li>
+                            <li><a href="#" ><img src="img/footer/footer4.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Copyright  -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>    
